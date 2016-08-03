@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<script type="text/javascript" src="../src/ratsloader.js"></script>
+	<script type="text/javascript">
+		
+		ratsloader.config({
+
+			//基础路径，如果未定义，则为当前js的路径
+		    base: '../',
+
+		    // set "app" as an exception for our application code
+		    paths: {
+		        'jquery': 'test/jquery/jquery-1.12.4.js',
+		        'jqGrid':[
+		      		'plugins/jqGrid/css/ui.jqgrid-boootstrap-ui.css',
+		      		'plugins/jqGrid/js/jquery-1.11.0.min.js'
+		        ],
+		        'layout':''
+
+		    },
+		    debug:true
+	   });
+		
+    	ratsloader.import(['jquery', 'jqGrid']);
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
